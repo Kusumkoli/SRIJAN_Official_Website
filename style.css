@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+}
+
+nav {
+	position: fixed;
+	right: 0%;
+	text-align: right;
+	top: 50%;
+	transform: translate(0%, -50%);
+	z-index: 10;
+}
+
+nav ul li {
+	list-style: none;
+	text-transform: lowercase;
+	margin: 30px;
+	font-size: 22px;
+	color: grey;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: grey;
+	transition: all 0.2s ease;
+	animation-fill-mode: forwards;
+}
+
+nav ul li a:focus {
+	font-size: 35px;
+	color: white;
+	text-decoration: underline;
+}
+
+article {
+	height: 100vh;
+}
+
+header {
+	height: 100px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.login_signup p {
+	display: inline;
+	color: grey;
+}
+
+.login_signup {
+	margin: 10px;
+}
+
+.login_signup a {
+	color: grey;
+	text-decoration: none;
+	display: inline;
+}
+
+.homepage {
+	height: 90vh;
+	position: relative;
+}
+
+/*ARTWORKS PAGE*/
+.artworks {
+	position: relative;
+}
+
+#relatedContent {
+	width:1020px;
+	overflow:hidden;
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	transform: translate(0%, -50%);
+}
+
+#relatedContent ul {
+	width:99999px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	position: relative;
+	left:0;
+	transition: .3s left;
+}
+
+#relatedContent ul li {
+	width:350px;
+	float:left;
+}
+
+#relatedContent ul li img {
+	height: 350px;
+	width: 320px;
+}
+
+.showcase {
+	/*Set so we can calculate the offsetLeft*/
+	position:relative;
+	height:350px;
+	width:auto;
+	/*add scroll-bars */
+	overflow:auto;
+	float:left;
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+#rc-left,
+#rc-right {
+	width:auto;
+	height:auto;
+	display:block;
+	float:left;
+	margin:0 10px;
+}
+
+.fa-caret-left, .fa-caret-right {
+	color: grey;
+	font-size: 50px;
+	opacity: 0.3;
+}
+
+#rc-right {
+	float: right;
+}
+
+/*.artwork_img_flex {
+	display: flex;
+	padding-top: 50px;
+}
+
+.artwork_img {
+	height: 300px;
+	width: 250px;
+	background-size: 100% 100%;
+	margin: 50px 20px;
+	box-shadow: 5px 5px 20px darkgrey;
+}
+
+.artwork_img:nth-child(1) {
+	background-image: url("artwork1.jpeg");
+}
+
+.artwork_img:nth-child(2) {
+	background-image: url("artwork2.jpeg");
+	margin-top: 100px;
+}
+
+.artwork_img:nth-child(3) {
+	background-image: url("artwork3.jpeg");
+}*/
+
+
+.team {
+}
+
+.team_flex {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1000px;
+	justify-content: center;
+	margin: 100px 0px 0px 100px;
+}
+
+.team_img {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	margin: 10px;
+}
+
+.member_img {
+	position: absolute;
+	height: 230px;
+	width: 230px;
+	background-size: 100% 100%;
+}
+
+.member_img1 {
+	background-image: url("teamimg1.png");
+}
+
+.member_img2 {
+	background-image: url("teamimg2.png");
+}
+
+.member_img3 {
+	background-image: url("teamimg3.png");
+}
+
+.style_outline {
+	height: 250px;
+	width: 250px;
+	position: absolute;
+	background-size: 100% 100%;
+}
+
+.style_outline1 {
+	background-image: url("outline1.png");
+}
+
+.style_outline2 {
+	background-image: url("outline2.png");
+}
+
+.style_outline3 {
+	background-image: url("outline3.png");
+}
+
+
+
+
