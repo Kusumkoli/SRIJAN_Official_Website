@@ -1,28 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<title>SRIJAN</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="author" content="Kusum Koli, National Institute of Technology, Hamirpur, 1-2-2020">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/02f59fe46f.js"></script>
 </head>
-<body>	
-	<nav>
+<body onload="remove_loader()">
+	<div id="loader">
+		<div class="load_circle load_circle1"></div>
+		<div class="load_circle load_circle2"></div>
+		<div class="load_circle load_circle3"></div>
+	</div>	
+	<nav class="navbar">
+		<div class="logo_fixed"></div>
 		<ul>
 			<li><a href="#homepage_link"><p>HOME</p></a></li>
+			<li><a href="#magazine_link"><p>MAGAZINE</p></a></li>
 			<li><a href="#artworks_link"><p>ARTWORKS</p></a></li>
 			<li><a href="#team_link"><p>THE TEAM</p></a></li>
-			<li><a href="#magazine_link"><p>MAGAZINE</p></a></li>
 			<li><a href="#timeline_link"><p>TIMELINE</p></a></li>
 		</ul>
 	</nav>
 
-	<header>
+	<!-- <header>
+		
 		<p><em>/SRIJAN</em>NIT Hamirpur</p>
-		<!-- <div id="login_signup"><a href="login">login</a><p> | </p><a href="signup">New Reader Sign up</a></div> -->
-	</header>
-
+		<div id="login_signup"><a href="login">login</a><p> | </p><a href="signup">New Reader Sign up</a></div>
+	</header> -->
+	<a id="homepage_link"></a>
 	<article class="homepage">
-		<a id="homepage_link"></a>
+		<video autoplay muted id="myVideo">
+	  		<source src="logo_animation.mp4" type="video/mp4">
+		</video>
+		<div class="hometext hometext_begin">
+			<p>How it all begin...</p>
+		</div>
+		<div class="hometext hometext_end">
+			<p>Here we are now...</p>
+		</div>
+	</article>
+
+	<article class="magazine_page">
+	<a id="magazine_link"></a>
+	<div class="container">
+    <button class="oka-toggle-button oka-v-with-icon oka-m-main-menu" id="first-btn" data-target="ipsum-lorem" aria-expanded="false">
+    	Måned
+      	<i class="fa fa-chevron-down"></i>
+    </button>
+    <div class="oka-horizontalMenu oka-v-default ">
+  		<nav class="oka-menu-links-wrapper" data-overflowing="both">
+    		<div class="oka-menu-links-content oka-menu-links-content-no-transition" style="transform: none;">
+        		<ul>
+                    <li class="oka-menu-link" style="padding-left: 0px;">
+           				<a href="#">
+              				<span class="oka-text-link">Setember 2008</span>
+            			</a>
+          			</li>
+                    <li class="oka-menu-link">
+	        			<a href="#">
+	          				<span class="oka-text-link">October</span>
+	        			</a>
+	        		</li>
+	              	<li class="oka-menu-link">
+	        			<a href="#">
+	          				<span class="oka-text-link">November</span>
+	        			</a>
+	      			</li>
+	              	<li class="oka-menu-link">
+		                <a href="#">
+		          			<span class="oka-text-link">December</span>
+		        		</a>
+	        		</li>
+                    <li class="oka-menu-link">
+            			<a href="#">
+              				<span class="oka-text-link">January</span>
+            			</a>
+          			</li>
+	                <li class="oka-menu-link">
+	        			<a href="#">
+	          				<span class="oka-text-link">February</span>
+	        			</a>
+	        		</li>
+                  	<li class="oka-menu-link">
+	        			<a href="#">
+	          				<span class="oka-text-link">April</span>
+	        			</a>
+	        		</li>
+	              	<li class="oka-menu-link">
+	        			<a href="#">
+	          				<span class="oka-text-link">May</span>
+	        			</a>
+	      			</li>
+	              	<li class="oka-menu-link">
+		                <a href="#">
+		          			<span class="oka-text-link">June</span>
+		        		</a>
+	        		</li>
+                    <li class="oka-menu-link">
+            			<a href="#">
+              				<span class="oka-text-link">july</span>
+            			</a>
+          			</li>
+	                <li class="oka-menu-link">
+	        			<a href="#">
+	          				<span class="oka-text-link">August</span>
+	        			</a>
+	        		</li>
+	              	<li class="oka-menu-link">
+	        			<a href="#">
+	          				<span class="oka-text-link">Setember</span>
+	        			</a>
+	      			</li>
+	              	<li class="oka-menu-link">
+		                <a href="#">
+		          			<span class="oka-text-link">Oktober</span>
+		        		</a>
+	        		</li>
+                    <li class="oka-menu-link">
+            			<a href="#">
+              				<span class="oka-text-link">November</span>
+            			</a>
+          			</li>
+                  	<li class="oka-menu-link">
+           				<a href="#">
+              				<span class="oka-text-link">Desember</span>
+            			</a>
+          			</li>
+              	</ul>
+      			<span class="oka-item-active" aria-hidden="true" style="transform: translateX(500.297px) /*scaleX(1.005)*/;"></span>
+    		</div>
+  		</nav>
+    	<button class="oka-advancer oka-advancer-left" type="button" aria-hidden="true"></button>
+  		<button class="oka-advancer oka-advancer-right" type="button" aria-hidden="true"></button>
+		</div>
+	</div>
+
 	</article>
 
 	<article class="artworks">
@@ -77,17 +195,23 @@
 		</div>
 	</article>
 
-	<article>
-		<a id="magazine_link"></a>
-	</article>
 
-	<article>
+	<article class="event_timeline">
 		<a id="timeline_link"></a>
+
 	</article>
 
 	<footer></footer>
 </body>
 <script type="text/javascript">
+	//loader
+	var loader = document.getElementById('loader');
+
+	function remove_loader() {
+		loader.style.display = 'none';
+	}
+
+	// Slider artworks gallery
 	var showcase=document.getElementById("showcase"),
 	left=document.getElementById("rc-left"),
 	right=document.getElementById("rc-right"),
@@ -128,6 +252,218 @@ right.addEventListener("click",function(){
 		showcaseInner.style.left = Number(currentPos)-Number(itemWidth)+"px";
 	}
 });
+
+
+// magazines 
+document.addEventListener('DOMContentLoaded', () => {
+
+  const SETTINGS = {
+    navBarTravelling: false,
+    navBarTravelDirection: '',
+    navBarTravelDistance: 500
+  }
+
+  const MENU = {
+    activeLink: document.querySelector('.oka-item-active'),
+    firstChild: document.querySelector('.oka-menu-links-content ul').firstElementChild,
+    lastChild: document.querySelector('.oka-menu-links-content ul').lastElementChild,
+    links: [...document.querySelectorAll('.oka-menu-link a')],
+    menuLinksWrapper: document.querySelector('.oka-menu-links-wrapper'),
+    menuLinksContent: document.querySelector('.oka-menu-links-content'),
+    monthsButtonPosition: document.querySelector('.oka-m-main-menu'),
+    navLeft: document.querySelector('.oka-advancer-left'),
+    navRight: document.querySelector('.oka-advancer-right')
+  }
+
+  let MENU_VARS = {
+    currentButtonPosition: MENU.monthsButtonPosition.getBoundingClientRect().left,
+    ticking: false
+  }
+
+  //Scrolls the item under the position of the button
+  let shiftMonthPosition = (item) => {
+    let textPosition = item.getBoundingClientRect().left
+    let buttonPosition = MENU.monthsButtonPosition.getBoundingClientRect().left
+    let linksContent = MENU.menuLinksContent.getBoundingClientRect().left
+    let linksWrapper = MENU.menuLinksWrapper.getBoundingClientRect().left
+    let distance = textPosition - linksContent
+    let leftPaddingButton = buttonPosition - linksWrapper
+
+    MENU.menuLinksWrapper.scrollLeft = distance - leftPaddingButton
+    determineOpacityButtons()
+  }
+
+  //Sets the padding that will have the first and the last item
+  let calculatePaddings = () => {
+    let buttonPosition = MENU.monthsButtonPosition.getBoundingClientRect().left
+    let wrapper = MENU.menuLinksWrapper.getBoundingClientRect().left
+    let leftPaddingButton = buttonPosition - wrapper
+    let lastChildWidth = MENU.lastChild.querySelector('span.oka-text-link').getBoundingClientRect().width
+    let rightPaddingButton = MENU.menuLinksWrapper.getBoundingClientRect().width - leftPaddingButton - lastChildWidth - 1
+
+    MENU.firstChild.style.paddingLeft = leftPaddingButton + 'px'
+    MENU.lastChild.style.paddingRight = rightPaddingButton + 'px'
+
+  }
+
+  //Sets the aria-selected attribute to the links
+  let addToggleAriaSelectedEvent = (link) => {
+    link.addEventListener('click', (event) => {
+      MENU.links.forEach((item) => {
+        item.setAttribute('aria-selected', 'false')
+      })
+
+      let linkElem = (event.target.href) ? event.target : event.target.parentElement
+      let spanElem = linkElem.href ? linkElem.querySelector('.oka-text-link') : linkElem
+
+      linkElem.setAttribute('aria-selected', 'true')
+      MENU.menuLinksWrapper.style.scrollBehavior = 'smooth'
+      moveIndicator(spanElem)
+      shiftMonthPosition(linkElem.querySelector('span'))
+      //change the scroll behavior back to auto, to prevent extra bouncing when scrolling
+      // MENU.menuLinksWrapper.style.scrollBehavior = 'auto'
+    })
+  }
+
+  //Moves the underline of the active link
+  let moveIndicator = (item) => {
+    let textPosition = item.getBoundingClientRect()
+    let container = MENU.menuLinksContent.getBoundingClientRect().left
+    let distance = textPosition.left - container
+
+    MENU.activeLink.style.transform = 'translateX(' + (distance + MENU.menuLinksContent.scrollLeft) + 'px) scaleX(' + textPosition.width * 0.01 + ')'
+  }
+
+  //Shows left and right arrows accordingly to the overflow
+  let determineOverflow = (content, container) => {
+    let containerMetrics = container.getBoundingClientRect()
+    let containerMetricsRight = Math.floor(containerMetrics.right)
+    let containerMetricsLeft = Math.floor(containerMetrics.left)
+    let contentMetrics = content.getBoundingClientRect()
+    let contentMetricsRight = Math.floor(contentMetrics.right)
+    let contentMetricsLeft = Math.floor(contentMetrics.left)
+
+    if (containerMetricsLeft > contentMetricsLeft && containerMetricsRight < contentMetricsRight) {
+      return 'both'
+    } else if (contentMetricsLeft < containerMetricsLeft) {
+      return 'left'
+    } else if (contentMetricsRight > containerMetricsRight) {
+      return 'right'
+    } else {
+      return 'none'
+    }
+  }
+
+  let determineOpacityButtons = () => {
+    MENU.menuLinksWrapper.setAttribute('data-overflowing', determineOverflow(MENU.menuLinksContent, MENU.menuLinksWrapper))
+  }
+
+  let scrollLinksContent = (availableScroll, direction) => {
+    if (availableScroll < SETTINGS.navBarTravelDistance * 2) {
+      MENU.menuLinksContent.style.transform = direction === 'right' ?
+        'translateX(-' + availableScroll + 'px)' :
+        'translateX(' + availableScroll + 'px)'
+    } else {
+      MENU.menuLinksContent.style.transform = direction === 'right' ?
+        'translateX(-' + SETTINGS.navBarTravelDistance + 'px)' :
+        'translateX(' + SETTINGS.navBarTravelDistance + 'px)'
+    }
+
+    MENU.menuLinksContent.classList.remove('oka-menu-links-content-no-transition')
+    SETTINGS.navBarTravelDirection = direction
+    SETTINGS.navBarTravelling = true
+  }
+
+  let init = () => {
+    document.documentElement.classList.remove('no-js')
+    document.documentElement.classList.add('js')
+
+    MENU.links.forEach((link) => {
+      addToggleAriaSelectedEvent(link)
+    })
+
+    calculatePaddings()
+    shiftMonthPosition(MENU.menuLinksWrapper.querySelector('[aria-selected=true] span'))
+    moveIndicator(MENU.menuLinksWrapper.querySelector('[aria-selected=true]').querySelector('.oka-text-link'))
+  }
+
+  //moves the indicator with the new coordinates
+  window.addEventListener('resize', () => {
+    if (MENU.monthsButtonPosition.getBoundingClientRect().left !== MENU_VARS.currentButtonPosition) {
+      MENU_VARS.currentButtonPosition = MENU.monthsButtonPosition.getBoundingClientRect().left
+      calculatePaddings()
+      moveIndicator(MENU.menuLinksWrapper.querySelector('[aria-selected=true]').querySelector('.oka-text-link'))
+    }
+
+    shiftMonthPosition(MENU.menuLinksWrapper.querySelector('[aria-selected=true] span'))
+  })
+
+  MENU.menuLinksWrapper.addEventListener('scroll', () => {
+    if (!MENU_VARS.ticking) {
+      window.requestAnimationFrame(() => {
+        determineOpacityButtons()
+        MENU_VARS.ticking = false
+      })
+    }
+    MENU_VARS.ticking = true
+  })
+
+  MENU.navLeft.addEventListener('click', () => {
+    //don't do anything if still scrolling
+    if (SETTINGS.navBarTravelling === true) {
+      return
+    }
+
+    let overflowDirection = determineOverflow(MENU.menuLinksContent, MENU.menuLinksWrapper)
+
+    if (overflowDirection === 'left' || overflowDirection === 'both') {
+      let availableScrollLeft = MENU.menuLinksWrapper.scrollLeft
+
+      scrollLinksContent(availableScrollLeft, 'left')
+    }
+
+    determineOpacityButtons()
+  })
+
+  MENU.navRight.addEventListener('click', () => {
+    if (SETTINGS.navBarTravelling === true) {
+        return
+    }
+
+    let overflowDirection = determineOverflow(MENU.menuLinksContent, MENU.menuLinksWrapper)
+
+    if (overflowDirection === 'right' || overflowDirection === 'both') {
+      let navBarRightEdge = MENU.menuLinksContent.getBoundingClientRect().right
+      let navBarScrollerRightEdge = MENU.menuLinksWrapper.getBoundingClientRect().right
+      let availableScrollRight = Math.floor(navBarRightEdge - navBarScrollerRightEdge)
+
+      scrollLinksContent(availableScrollRight, 'right')
+    }
+
+    determineOpacityButtons()
+  })
+
+  MENU.menuLinksContent.addEventListener('transitionend',() => {
+      let styleOfTransform = window.getComputedStyle(MENU.menuLinksContent, null)
+      let propertyTransform = styleOfTransform.getPropertyValue('-webkit-transform') || styleOfTransform.getPropertyValue('transform')
+      let amount = Math.abs(parseInt(propertyTransform.split(',')[4]) || 0)
+
+      MENU.menuLinksContent.classList.add('oka-menu-links-content-no-transition')
+      MENU.menuLinksContent.style.transform    = 'none'
+
+      if (SETTINGS.navBarTravelDirection === 'left') {
+        MENU.menuLinksWrapper.scrollLeft = MENU.menuLinksWrapper.scrollLeft - amount
+      } else {
+        MENU.menuLinksWrapper.scrollLeft = MENU.menuLinksWrapper.scrollLeft + amount
+      }
+
+      SETTINGS.navBarTravelling = false
+    },
+    false
+  )
+
+  init()
+})
 
 </script>
 </html>
