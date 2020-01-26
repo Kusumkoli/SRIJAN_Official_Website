@@ -128,7 +128,7 @@ nav ul li a {
 	animation-fill-mode: forwards;
 }
 
-nav ul li a:focus {
+nav ul li a:active {
 	font-size: 35px;
 	color: white;
 	text-decoration: underline;
@@ -159,6 +159,7 @@ header p {
 #myVideo {
 	height: 700px;
 	width: 1200px;
+	right: 18%;
 	position: absolute;
 	-o-object-fit: fill;
 	   object-fit: fill;
@@ -167,17 +168,29 @@ header p {
 
 .hometext {
 	position: absolute;
+	width: 300px;
 }
 
 .hometext p {
-	font-size: 20px;
+	font-size: 15px;
 	color: grey;
+	text-decoration: blink;
+}
+
+.hometext_begin {
+	top: 200px;
+	left: 250px;
+}
+
+.hometext_end {
+	bottom: 100px;
+	right: 250px;
 }
 
 
 /*Magazine*/
 .magazine_page {
-	background-color: pink;
+	background-color: black;
 }
 
 
@@ -197,7 +210,7 @@ header p {
   text-decoration: underline;
 }
 
-.container {
+.container_magazine {
   width: 800px;
 }
 
@@ -247,13 +260,13 @@ header p {
   text-decoration: none;
 }
 .oka-horizontalMenu .oka-menu-links-wrapper .oka-menu-links-content .oka-menu-link a[aria-selected="true"] {
-  color: #111;
+  color: #ef4436;
 }
 .oka-horizontalMenu .oka-menu-links-wrapper .oka-menu-links-content .oka-item-active {
-  background-color: green;
-  bottom: 0;
+  background-color: #ef4436;
+  bottom: 20px;
   height: 4px;
-  left: 0;
+  left: 0px;
   position: absolute;
   transform-origin: 0 0;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -293,10 +306,10 @@ header p {
   opacity: 1;
 }
 
-.oka-button-icon {
-  color: dark-green;
+/*.oka-button-icon {
+  color: green;
   font-size: 1.5rem;
-}
+}*/
 
 .oka-m-main-menu {
   margin-left: 300px;
@@ -376,14 +389,14 @@ header p {
 .team {
 }
 
-.team_flex {
+/*.team_flex {
 	display: flex;
 	flex-wrap: wrap;
 	width: 1000px;
 	justify-content: center;
 	margin: 100px 0px 0px 100px;
 }
-
+*/
 .team_img {
 	position: relative;
 	height: 300px;
@@ -429,7 +442,50 @@ header p {
 	background-image: url("outline3.png");
 }
 
+#container_team {
+  margin: 100px 50px;
+  position: relative;
+  width: 950px;
+}
+#container_team nav {
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 300px;
+  line-height: 300px;
+  color: #fff;
+  /*background: rgba(0, 0, 0, 0.75);*/
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+#container_team nav.left {
+  left: 0;
+}
+#container_team nav.right {
+  right: 0;
+}
+#container_team .list {
+  width: 100%;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  overflow-x: hidden;
+}
+#container_team .list .item {
+  width: 400px;
+  min-width: 300px;
+  height: 100%;
+  /*background: rgba(65, 75, 255, 0.85);*/
+  margin: 0 10px;
+}
+#container_team .list .item:nth-child(even) {
+  /*background: rgba(255, 75, 65, 0.85);*/
+}
+
+
+
 
 .event_timeline {
-	background-color: pink;
+	background-color: black;
 }
